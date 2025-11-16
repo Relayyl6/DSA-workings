@@ -53,17 +53,22 @@
 
 
 # free code camp daily challenge solved. Iterative procedure to coming about answer will be uploaded to a readme later
-def sort_array(arr, k):
-    n = len(arr)
-    if k < 0: # if k is a negative value
-        L = n - (abs(k) % n)
-    else: # if k is a positive shift or shift(k) is greater than the length of the array
-        L = k % n
 
-    new_array = arr[L:] + arr[:L]
-    return new_array
+# Question
+# Given an array and an integer representing how many positions to shift the array, return teh shifted array.
+# A positive integer shifted teh array to the left while a negative integer shifted the array to the right
+# The shift wrap around the array. eg [1, 2, 3] and 1, shifts the array to the left returning [2, 3, 1]
+# def sort_array(arr, k):
+#     n = len(arr)
+#     if k < 0: # if k is a negative value
+#         L = n - (abs(k) % n)
+#     else: # if k is a positive shift or shift(k) is greater than the length of the array
+#         L = k % n
 
-# Example
-arr = [54, 32, 62, 87, 21, 56, 9, 43]
-shifted_arr = sort_array(arr, 4)
-print("Sorted array:", shifted_arr)
+#     new_array = arr[L:] + arr[:L]
+#     return new_array
+
+# # Example
+# arr = [54, 32, 62, 87, 21, 56, 9, 43]
+# shifted_arr = sort_array(arr, 4)
+# print("Sorted array:", shifted_arr)
